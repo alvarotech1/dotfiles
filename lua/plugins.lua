@@ -8,6 +8,7 @@ require("lazy").setup({
   "nvim-tree/nvim-tree.lua",
   "nvim-tree/nvim-web-devicons",
   "neovim/nvim-lspconfig",
+  "folke/tokyonight.nvim",
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-nvim-lsp",
   "L3MON4D3/LuaSnip",
@@ -18,7 +19,9 @@ require("lazy").setup({
 })
 
 -- Nvim Tree config (puede ir en settings.lua o plugins.lua)
-require("nvim-tree").setup()
+require("nvim-tree").setup{}
+
+
 -- Telescope config
 require("telescope").setup{}
 
